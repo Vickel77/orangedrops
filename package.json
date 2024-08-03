@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.2",
     "aos": "^2.3.4",
     "next": "14.2.5",
     "nuka-carousel": "^8.0.1",

@@ -30,20 +30,20 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section className="relative py-12 ">
+    <section className="relative py-12 w-full  ">
       <div className="sticky top-0 z-10 py-4">
         <h2 className="text-4xl font-bold text-center opacity-50 ">
           Our Products
         </h2>
       </div>
       <div className="py-10">
-        <div className="flex gap-10 relative">
+        <div className="flex flex-wrap gap-10 justify-evenly relative">
           <div
             data-aos="fade-right"
             key={"product.id"}
-            className="flex min-w-[150px] bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+            className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden "
           >
-            <div className="flex-1 flex justify-center items-center">
+            <div className=" flex  justify-center items-center">
               <Image
                 src="/white-bread.png"
                 alt={"white bread"}
@@ -66,9 +66,9 @@ const Brands = () => {
           <div
             key={"product.id"}
             data-aos="fade-left"
-            className="flex  min-w-[150px] bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+            className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden  "
           >
-            <div className=" flex-1 flex justify-center items-center">
+            <div className=" flex justify-center items-center">
               <Image
                 src="/fruits-powder.png"
                 alt={"fruits powder"}
@@ -91,7 +91,7 @@ const Brands = () => {
         </div>
         <div
           key={"product.id"}
-          className="flex mt-10   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+          className="flex flex-wrap mt-10   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
         >
           <div className="p-10  flex-1  justify-center">
             <h3 className="text-3xl font-semibold mb-2">Work out Session</h3>
@@ -103,7 +103,7 @@ const Brands = () => {
               Book a session
             </button>
           </div>
-          <div className="  flex justify-center items-center">
+          <div className="hidden md:flex justify-center items-center">
             <Image
               src="/workout.png"
               alt={"fruits powder"}
