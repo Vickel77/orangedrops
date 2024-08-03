@@ -6,9 +6,9 @@ import { FaBullseye, FaChessKnight } from "react-icons/fa";
 // pages/about.js
 const About = () => {
   return (
-    <div className=" text-gray-800">
-      <div className="container mx-auto px-4 py-16">
-        <div className="w-full min-h-[50vh] relative flex justify-center items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
+    <div className="w-[100vw] overflow-hidden text-gray-800">
+      <div className="container mx-auto px-5 py-16">
+        <div className="w-[100vw] min-h-[50vh] relative flex justify-center items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
           <h1 className="text-5xl font-semibold text-center mb-8">About Us</h1>
           <div>
             <Image alt="" src="" />
@@ -17,7 +17,7 @@ const About = () => {
 
         {/* Section 2: Our Story  */}
         <section className="mb-16 flex flex-wrap items-center justify-between ">
-          <div className="w-[50%]">
+          <div className="w-full lg:w-[50%]">
             <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
             <p className="text-lg mb-4">
               Orangedrops is a pioneering food and health-tech company based in
@@ -31,9 +31,9 @@ const About = () => {
               services, and healthcare services sectors.
             </p>
           </div>
-          <div className="bg-primary rounded-xl">
+          <div className="bg-primary rounded-xl mt-10 mt:mb-0">
             <Image
-              data-aos="fade-up-right"
+              data-aos="fade-up-left"
               className="rounded-xl -translate-x-5 -translate-y-5"
               alt="wwd1"
               src="/wwd1.jpeg"
@@ -44,10 +44,10 @@ const About = () => {
         </section>
 
         {/* Section 2: Our Story */}
-        <section className="mb-16  flex flex-wrap items-center justify-between ">
-          <div className="bg-primary rounded-xl">
+        <section className="mb-16  flex   flex-wrap-reverse md:flex-row items-center justify-between ">
+          <div className="bg-primary rounded-xl mb-10 md:mb-0">
             <Image
-              data-aos="fade-up-left"
+              data-aos="fade-up-right"
               className="rounded-xl translate-x-5 translate-y-5"
               alt="wwd2"
               src="/wwd2.jpeg"
@@ -55,7 +55,7 @@ const About = () => {
               height={300}
             />
           </div>
-          <div className="w-[50%]">
+          <div className="w-full lg:w-[50%] mt-10 mt:mb-0 ">
             <h2 className="text-3xl font-semibold mb-4">What we do</h2>
             <p className="text-lg mb-4">
               Founded in [Year], [Brand Name] was born out of a passion for
@@ -72,11 +72,11 @@ const About = () => {
         <Mission />
 
         <section className="py-10">
-          <div className="inline-flex gap-10 relative">
+          <div className="inline-flex flex-wrap gap-10 relative">
             <div
               data-aos="fade-right"
               key={"product.id"}
-              className=" primary-glass flex flex-col w-1/2 min-w-[150px] text-white  items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+              className=" primary-glass flex flex-col max-w-full  md:max-w-[47%]  min-w-[150px] text-white  items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow "
             >
               <div className=" flex self-start p-10">
                 <FaBullseye className="text-6xl " />
@@ -94,7 +94,7 @@ const About = () => {
             <div
               key={"product.id"}
               data-aos="fade-left"
-              className="secondary-glass flex flex-col w-1/2 min-w-[150px]  text-white items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+              className="secondary-glass flex flex-col max-w-full  md:max-w-[47%]   min-w-[150px]  text-white items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow"
             >
               <div className="  flex  self-start p-10">
                 <FaChessKnight className="text-6xl" />

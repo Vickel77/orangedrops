@@ -3,8 +3,8 @@ import React from "react";
 
 function Mission() {
   return (
-    <section className="bg-secondary flex gap-10 w-full justify-center items-center rounded-3xl mt-40  ">
-      <div className="max-w-[50%] text-white text-center p-20">
+    <section className="bg-secondary flex flex-wrap  w-full justify-center items-center rounded-3xl mt-40  ">
+      <div className="max-w-[100%] md:max-w-[50%] text-white text-center p-5 md:p-20">
         <h2 className="text-4xl font-bold mb-5 ">Our Mission</h2>
         <p className="text-xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
@@ -12,7 +12,7 @@ function Mission() {
           doloremque tempore, officiis provident magnam dolor quaerat!
         </p>
       </div>
-      <div className="before:absolute before:rounded-3xl before:h-[500px]  before:content-['']  before:w-[300px]">
+      <div className=" max-w-[100%] md:max-w-[50%] before:absolute before:rounded-3xl before:h-[500px]  before:content-['']  before:w-[300px]">
         <Image
           data-aos="fade-left"
           className="relative rounded-xl"

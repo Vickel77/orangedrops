@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex min-h-screen flex-col items-center px-24">
+      <section className="flex min-h-screen  flex-col items-center md:px-24 px-10 ">
         <Header />
         <TrustedBrands />
         <Mission />

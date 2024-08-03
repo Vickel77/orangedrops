@@ -32,7 +32,7 @@ const TeamComp = () => {
   return (
     <section className=" relative py-12 ">
       <div className="  before:absolute before:top-0 before:left-[40%] before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-[40%] after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-[''] ">
-        <div className="flex  gap-10 flex-wrap relative">
+        <div className="flex gap-20  md:gap-10  flex-wrap relative">
           {products.map((product, index) => (
             <div
               data-aos={"fade-up"}

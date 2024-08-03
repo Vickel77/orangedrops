@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
+import Navbar, { MobileNavbar } from "@/component/Navbar";
 import Footer from "@/component/Footer/indedx";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Navbar />
+        {/* <MobileNavbar /> */}
         {children}
         <Footer />
       </body>
