@@ -39,7 +39,7 @@ const WebNav = () => {
       <div>
         <Link
           className="px-4 shadow-xl py-2 bg-primary rounded-full hover:opacity-75 text-white"
-          href="/get-started"
+          href="mailto:info@orangedrops.ng"
         >
           Get Started
         </Link>
@@ -54,7 +54,7 @@ const MobileNav = () => {
     <nav className=" fixed top-0 left-0 right-0 w-[100vw]  p-4 bg-[#ffffff33] backdrop-blur-lg z-50 px-10 ">
       <div className="flex items-center justify-between">
         <div className="text-xl font-bold">
-          <Link href="/">
+          <Link onClick={() => setIsOpen(false)} href="/">
             <Image src="/od-logo-1.png" alt="logo" width={150} height={50} />
           </Link>
         </div>

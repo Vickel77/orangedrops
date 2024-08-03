@@ -1,5 +1,6 @@
 import CoreValues from "@/component/CoreValues";
 import Mission from "@/component/Mission";
+import Vision from "@/component/Vission";
 import Image from "next/image";
 import { FaBullseye, FaChessKnight } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ const About = () => {
   return (
     <div className="w-[100vw] overflow-hidden text-gray-800">
       <div className="container mx-auto px-5 py-16">
-        <div className="w-[100vw] min-h-[50vh] relative flex justify-center items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
+        <div className="max-w-[100vw] min-h-[50vh] relative flex justify-center items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
           <h1 className="text-5xl font-semibold text-center mb-8">About Us</h1>
           <div>
             <Image alt="" src="" />
@@ -70,13 +71,14 @@ const About = () => {
 
         {/* <CoreValues /> */}
         <Mission />
+        {/* <Vision /> */}
 
         <section className="py-10">
-          <div className="inline-flex flex-wrap gap-10 relative">
+          <div className="inline-flex flex-wrap justify-between relative">
             <div
               data-aos="fade-right"
               key={"product.id"}
-              className=" primary-glass flex flex-col max-w-full  md:max-w-[47%]  min-w-[150px] text-white  items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow "
+              className=" primary-glass flex flex-col max-w-full  md:max-w-[48%]  min-w-[150px] text-white  items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow "
             >
               <div className=" flex self-start p-10">
                 <FaBullseye className="text-6xl " />
@@ -94,7 +96,7 @@ const About = () => {
             <div
               key={"product.id"}
               data-aos="fade-left"
-              className="secondary-glass flex flex-col max-w-full  md:max-w-[47%]   min-w-[150px]  text-white items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow"
+              className="secondary-glass flex flex-col max-w-full  md:max-w-[48%]   min-w-[150px]  text-white items-center  rounded-xl shadow-md overflow-hidden flex-shrink flex-grow"
             >
               <div className="  flex  self-start p-10">
                 <FaChessKnight className="text-6xl" />

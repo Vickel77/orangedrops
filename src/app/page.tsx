@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex min-h-screen max-w-[100vw] overflow-hidden flex-col items-center md:px-24 px-10 ">
+      <section className="flex min-h-screen max-w-[100vw] overflow-hidden flex-col items-center md:px-24 px-5 ">
         <Header />
         <TrustedBrands />
         <Mission />
