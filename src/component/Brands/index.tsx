@@ -28,7 +28,7 @@ const brands = [
   // Add more products as needed
 ];
 
-const Brands = () => {
+const Brands = ({ hideBottomBanner }: { hideBottomBanner?: boolean }) => {
   return (
     <section className="relative py-12 w-full  ">
       <div className="sticky top-0 z-10 py-4">
@@ -58,9 +58,6 @@ const Brands = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat, quam!
               </p>
-              <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
-                Buy Now
-              </button>
             </div>
           </div>
           <div
@@ -83,36 +80,39 @@ const Brands = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Placeat, quam!
               </p>
-              <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
+              {/* <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
                 Order Now
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
-        <div
-          key={"product.id"}
-          className="flex flex-wrap mt-10   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
-        >
-          <div className="p-10  flex-1  justify-center">
-            <h3 className="text-3xl font-semibold mb-2">Work out Session</h3>
-            <p className="max-w-[400px] mb-4 text-xl">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
-              quam!
-            </p>
-            <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark mt-5 text-2xl">
+        {!hideBottomBanner && (
+          <div
+            key={"product.id"}
+            className="flex flex-wrap mt-20   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+          >
+            <div className="p-10  flex-1  justify-center">
+              <h3 className="text-3xl font-semibold mb-2">
+                Committed to technology and innovation
+              </h3>
+              {/* <p className="max-w-[400px] mb-4 text-xl">
+              Committed to technology and innovation
+            </p> */}
+              {/* <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark mt-5 text-2xl">
               Book a session
-            </button>
+            </button> */}
+            </div>
+            <div className="hidden md:flex justify-center items-center">
+              <Image
+                src="/tech.png"
+                alt={"fruits powder"}
+                width={500}
+                height={600}
+                className=" object-cover drop-shadow-xl"
+              />
+            </div>
           </div>
-          <div className="hidden md:flex justify-center items-center">
-            <Image
-              src="/workout.png"
-              alt={"fruits powder"}
-              width={300}
-              height={400}
-              className=" object-cover drop-shadow-xl"
-            />
-          </div>
-        </div>
+        )}
       </div>
     </section>
   );

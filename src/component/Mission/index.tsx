@@ -21,8 +21,8 @@ function Mission() {
             data-aos="fade-left"
             className="relative rounded-xl"
             alt=""
-            src="/header-1.png"
-            width={700}
+            src="/food-lab.jpg"
+            width={500}
             height={500}
           />
         </div>
@@ -43,7 +43,7 @@ function Mission() {
             data-aos="fade-right"
             className="relative rounded-xl"
             alt=""
-            src="/target.png"
+            src="/vision.jpg"
             width={500}
             height={500}
           />

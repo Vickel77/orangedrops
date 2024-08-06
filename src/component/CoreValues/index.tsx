@@ -40,12 +40,12 @@ export default function CoreValues() {
         Our Core Values
       </h2>
       <div className="flex flex-wrap justify-center">
-        {values.map((value, index) => (
+        {values.reverse().map((value, index) => (
           <div
             data-aos="fade-in"
             data-aos-delay={index * 100}
             key={index}
-            className={`flex hover:scale-110 items-center bg-gradient-to-r border-2  border-${value.gradient} bg-${value.gradient} bg-opacity-10  p-6 m-4  rounded-xl shadow-md`}
+            className={`flex flex-1  hover:scale-110 items-center bg-gradient-to-r border-2 border-${value.gradient} bg-${value.gradient} bg-opacity-10 p-6 m-4 rounded-xl shadow-md`}
           >
             <div className="mr-4">{value.icon}</div>
             <div>

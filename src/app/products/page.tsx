@@ -12,7 +12,7 @@ const Team = () => {
           Products and Brands
         </h1>
       </div> */}
-      <Brands />
+      <Brands hideBottomBanner />
     </div>
   );
 };
