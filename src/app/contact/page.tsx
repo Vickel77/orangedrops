@@ -16,18 +16,18 @@ const Contact = () => {
             </h3>
             <ul className="mt-4 text-gray-600">
               <li className="flex gap-5 py-3">
-                <FaPhoneFlip className="text-primary" /> (123) 456-7890
+                <FaPhoneFlip className="text-primary" />  0706 521 3416
               </li>
               <li className="flex gap-5 py-3">
                 <FaMailBulk className="text-primary" /> contact@yourcompany.com
               </li>
-              <li className="flex gap-5 py-3">
-                <FaAddressBook className="text-primary" /> 123 Your Street, Your
-                City, YC 12345
+              <li className="flex gap-5 py-3 max-w-[400px]">
+                <FaAddressBook className="text-primary" /> Popoola street, 7,
+                Mayowa Close, Ago palace way, Lagos
               </li>
             </ul>
           </div>
-          <form className="space-y-6 w-full md:w-1/2" action="#" method="POST">
+          <form className="space-y-6 w-full flex-1" action="#" method="POST">
             <div>
               <label
                 htmlFor="name"
@@ -85,7 +85,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-xl text-sm font-medium text-white bg-primary hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               >
-                -primary
+                Send
               </button>
             </div>
           </form>
