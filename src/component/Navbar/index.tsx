@@ -103,7 +103,7 @@ const MobileNav = () => {
                   className="block hover:text-gray-400"
                   href="/products"
                 >
-                  Projects and Brands
+                  Products and Brands
                 </Link>
               </li>
               <li>

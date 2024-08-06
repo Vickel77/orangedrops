@@ -31,7 +31,7 @@ const Footer = () => {
                 <Link href="/about">About</Link>
               </li>
               <li className="py-2">
-                <Link href="/services">Projects and Brands</Link>
+                <Link href="/products">Products and Brands</Link>
               </li>
               <li className="py-2">
                 <Link href="/contact">Team</Link>
@@ -55,7 +55,7 @@ const Footer = () => {
               <li className="py-2">
                 Phone:{" "}
                 <a href="tel:+1234567890" className="hover:underline">
-                  +1234567890
+                  0706 521 3416
                 </a>
               </li>
               <li className="py-2">Address: 14, TC 12345</li>
@@ -63,7 +63,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-8">
-          <p className="text-sm">&copy; Lorem ipsum dolor sit amet.</p>
+          <p className="text-sm">
+            &copy; Popoola street, 7, Mayowa Close, Ago palace way, Lagos
+          </p>
         </div>
       </div>
     </footer>
