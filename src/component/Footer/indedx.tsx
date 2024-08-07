@@ -58,13 +58,15 @@ const Footer = () => {
                   0706 521 3416
                 </a>
               </li>
-              <li className="py-2">Address: 14, TC 12345</li>
+              <li className="py-2">
+                Address: Popoola street, 7, Mayowa Close, Ago palace way, Lagos
+              </li>
             </ul>
           </div>
         </div>
         <div className="text-center mt-8">
           <p className="text-sm">
-            &copy; Popoola street, 7, Mayowa Close, Ago palace way, Lagos
+            copyright &copy; {new Date().getFullYear().toString()} Orangedrops
           </p>
         </div>
       </div>
