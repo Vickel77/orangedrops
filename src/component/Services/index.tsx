@@ -4,25 +4,24 @@ const products = [
   {
     id: 1,
     name: "Production",
-    price: "$49.99",
     description:
-      "This is a great product that you will love and will be useful to you!",
+      "we operate multiple large scale food production and cultivation programs and activities",
     imageSrc: "/healthy.jpg",
     imageAlt: "Product 1",
   },
   {
     id: 2,
     name: "Processing",
-    price: "$59.99",
-    description: "This is another great product that you will love!",
+    description:
+      "Value addition to multiple food commodities, by incorporating technology and healthy distribution mechanism.",
     imageSrc: "/work-out.jpg",
     imageAlt: "Product 2",
   },
   {
     id: 3,
     name: "Production Technology",
-    price: "$69.99",
-    description: "This product is amazing and you should buy it!",
+    description:
+      "We’re at the forefront of food biotechnology and other cutting edge food production technologies",
     imageSrc: "/healthy2.jpg",
     imageAlt: "Product 3",
   },
