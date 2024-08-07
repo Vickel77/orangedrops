@@ -8,7 +8,7 @@ import { FaBars, FaX } from "react-icons/fa6";
 
 const WebNav = () => {
   return (
-    <nav className=" fixed top-0 left-0 right-0 w-[100vw] flex items-center justify-between p-4 bg-[#ffffff33] backdrop-blur-lg z-50 px-10 ">
+    <nav className=" fixed top-0 left-0 right-0 w-[100vw] flex items-center justify-between p-4 bg-[#ffffff33] backdrop-blur-lg z-50 px-20 ">
       <div className="text-xl font-bold">
         <Link href="/">
           <Image src="/od-logo-1.png" alt="logo" width={150} height={50} />
@@ -27,7 +27,7 @@ const WebNav = () => {
         </li>
         <li>
           <Link className="hover:text-gray-400" href="/products">
-            Projects and Brands
+            Products and Brands
           </Link>
         </li>
         <li>
@@ -36,14 +36,14 @@ const WebNav = () => {
           </Link>
         </li>
       </ul>
-      <div>
+      {/* <div>
         <Link
-          className="px-4 shadow-xl py-2 bg-primary rounded-full hover:opacity-75 text-white"
+          className=" opacity-0 px-4 shadow-xl py-2 bg-primary rounded-full hover:opacity-75 text-white"
           href="mailto:info@orangedrops.ng"
         >
           Get Started
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };
