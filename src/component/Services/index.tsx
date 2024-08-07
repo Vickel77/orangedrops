@@ -30,7 +30,7 @@ const products = [
 
 const Services = () => {
   return (
-    <section className="relative py-12 ">
+    <section className="relative py-12 my-20 ">
       <div className="sticky top-0 z-10 py-4">
         <h2 className="text-4xl font-bold text-center opacity-50 mb-10">
           Interests
@@ -42,6 +42,8 @@ const Services = () => {
             <div
               key={product.id}
               className="flex flex-col min-w-[350px] w-[300px] bg-white bg-opacity-60 backdrop-filter backdrop-blur-lg  rounded-xl shadow-md overflow-hidden "
+              data-aos="fade-up"
+              data-aos-delay={(index + 1) * 100}
             >
               {/* <div
                 className={` min-h-[300px]  max-h-80 overflow-hidden flex-1 flex justify-center items-center rounded-xl`}

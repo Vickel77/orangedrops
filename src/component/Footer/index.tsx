@@ -1,6 +1,7 @@
 // Footer.js
 import Image from "next/image";
 import Link from "next/link";
+import Socials from "../Socials";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <Image
         width={300}
         height={300}
-        className=" absolute bottom-0 right-0 z-0 "
+        className=" absolute bottom-0 left-0 z-0 "
         alt="fruit frame"
         src="/img-wheat.png"
       />
@@ -18,8 +19,7 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h5 className="text-lg font-semibold mb-2">Orangedrops</h5>
             <p className="text-sm py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur
+              Pioneering food production and health
             </p>
           </div>
 
@@ -60,6 +60,9 @@ const Footer = () => {
               </li>
               <li className="py-2">
                 Address: Popoola street, 7, Mayowa Close, Ago palace way, Lagos
+              </li>
+              <li>
+                <Socials />
               </li>
             </ul>
           </div>
