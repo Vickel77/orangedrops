@@ -28,68 +28,81 @@ const brands = [
   // Add more products as needed
 ];
 
-const Brands = ({ hideBottomBanner }: { hideBottomBanner?: boolean }) => {
+const Brands = ({
+  hideBottomBanner,
+  onHomePage,
+}: {
+  hideBottomBanner?: boolean;
+  onHomePage?: boolean;
+}) => {
   return (
     <section className="relative py-12 w-full  ">
-      <div className="sticky top-0 z-10 py-4">
-        <h2 className="text-4xl font-bold text-center opacity-50 ">
-          Our Products
-        </h2>
-      </div>
-      <div className="py-10">
-        <div className="flex flex-wrap gap-10 justify-evenly relative">
-          <div
-            data-aos="fade-right"
-            key={"product.id"}
-            className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden "
-          >
-            <div className=" flex  justify-center items-center">
-              <Image
-                src="/white-bread.png"
-                alt={"white bread"}
-                width={300}
-                height={200}
-                className=" object-cover drop-shadow-xl"
-              />
+      <div className="">
+        {!onHomePage && (
+          <>
+            <div className="sticky top-0 z-10 py-4">
+              <h2 className="text-4xl font-bold text-center opacity-50 pb-10 ">
+                Our Products
+              </h2>
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">White Bread</h3>
-              <p className="max-w-[200px] mb-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Placeat, quam!
-              </p>
-            </div>
-          </div>
-          <div
-            key={"product.id"}
-            data-aos="fade-left"
-            className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden  "
-          >
-            <div className=" flex justify-center items-center">
-              <Image
-                src="/fruits-powder.png"
-                alt={"fruits powder"}
-                width={300}
-                height={200}
-                className=" object-cover drop-shadow-xl"
-              />
-            </div>
-            <div className="p-6  justify-center">
-              <h3 className="text-xl font-semibold mb-2">Fruits Powder</h3>
-              <p className="max-w-[200px] mb-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Placeat, quam!
-              </p>
-              {/* <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
+
+            <div className="flex flex-wrap gap-10 justify-evenly relative">
+              <div
+                data-aos="fade-right"
+                key={"product.id"}
+                className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden "
+              >
+                <div className=" flex  justify-center items-center">
+                  <Image
+                    src="/white-bread.png"
+                    alt={"white bread"}
+                    width={300}
+                    height={200}
+                    className=" object-cover drop-shadow-xl"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">White Bread</h3>
+                  <p className="max-w-[200px] mb-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat, quam!
+                  </p>
+                </div>
+              </div>
+              <div
+                key={"product.id"}
+                data-aos="fade-left"
+                className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden  "
+              >
+                <div className=" flex justify-center items-center">
+                  <Image
+                    src="/fruits-powder.png"
+                    alt={"fruits powder"}
+                    width={300}
+                    height={200}
+                    className=" object-cover drop-shadow-xl"
+                  />
+                </div>
+                <div className="p-6  justify-center">
+                  <h3 className="text-xl font-semibold mb-2">Fruits Powder</h3>
+                  <p className="max-w-[200px] mb-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat, quam!
+                  </p>
+                  {/* <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
                 Order Now
               </button> */}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </>
+        )}
         {!hideBottomBanner && (
           <div
             key={"product.id"}
-            className="flex flex-wrap mt-20   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0"
+            className={`flex flex-wrap ${
+              !onHomePage ? "mt-20" : "mb-20"
+            }   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0`}
           >
             <div className="p-10  flex-1  justify-center">
               <h3 className="text-3xl font-semibold mb-2">
@@ -104,7 +117,7 @@ const Brands = ({ hideBottomBanner }: { hideBottomBanner?: boolean }) => {
             </div>
             <div className="hidden md:flex justify-center items-center">
               <Image
-                src="/tech.png"
+                src="/wwd1.png"
                 alt={"fruits powder"}
                 width={500}
                 height={600}
