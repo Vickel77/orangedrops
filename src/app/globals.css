@@ -53,12 +53,7 @@ body {
 }
 
 .primary-glass {
-  background-color: rgba(
-    255,
-    112,
-    0,
-    0.7
-  ); /* Background color with transparency */
+  background-color: #ff7000b3; /* Background color with transparency */
   backdrop-filter: blur(10px); /* Blurs the background behind the div */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for the glass effect */

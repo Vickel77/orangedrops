@@ -9,7 +9,7 @@ const Footer = () => {
       <Image
         width={300}
         height={300}
-        className=" absolute bottom-0 left-0 z-0 "
+        className=" absolute bottom-0 left-0 z-0  "
         alt="fruit frame"
         src="/img-wheat.png"
       />
@@ -48,13 +48,16 @@ const Footer = () => {
             <ul className="text-sm">
               <li className="py-2">
                 Email:{" "}
-                <a href="mailto:the@man.com" className="hover:underline">
+                <a
+                  href="mailto:info@orangedrops.ng"
+                  className="hover:underline"
+                >
                   info@orangedrops.ng
                 </a>
               </li>
               <li className="py-2">
                 Phone:{" "}
-                <a href="tel:+1234567890" className="hover:underline">
+                <a href="tel:+2347065213416" className="hover:underline">
                   0706 521 3416
                 </a>
               </li>

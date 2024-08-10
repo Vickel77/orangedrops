@@ -1,4 +1,12 @@
-import { FaAddressBook, FaMailBulk } from "react-icons/fa";
+import Socials from "@/component/Socials";
+import Link from "next/link";
+import {
+  FaAddressBook,
+  FaInstagram,
+  FaLinkedin,
+  FaMailBulk,
+  FaTwitter,
+} from "react-icons/fa";
 import { FaPhoneFlip } from "react-icons/fa6";
 
 // pages/about.js
@@ -14,16 +22,55 @@ const Contact = () => {
             <h3 className="text-lg leading-6 font-medium text-gray-900">
               Contact Information
             </h3>
-            <ul className="mt-4 text-gray-600">
-              <li className="flex gap-5 py-3">
-                <FaPhoneFlip className="text-primary" />  0706 521 3416
+            <ul className="mt-4 ">
+              <li className="flex items-center gap-5 py-3">
+                <Link
+                  className="hover:opacity-50 flex  items-center gap-5"
+                  href="tel:+2347065213416"
+                >
+                  <FaPhoneFlip size={20} className="text-primary rotate-90" />
+                  0706 521 3416
+                </Link>
               </li>
-              <li className="flex gap-5 py-3">
-                <FaMailBulk className="text-primary" /> contact@yourcompany.com
+              <li className="flex items-center gap-5 py-3">
+                <Link
+                  className="hover:opacity-50 flex  items-center gap-5"
+                  href="mailto:info@orangedrops.ng"
+                >
+                  <FaMailBulk size={20} className="text-primary" />
+                  info@orangedrops.ng
+                </Link>
               </li>
-              <li className="flex gap-5 py-3 max-w-[400px]">
-                <FaAddressBook className="text-primary" /> Popoola street, 7,
-                Mayowa Close, Ago palace way, Lagos
+              <li className="flex items-center gap-5 py-3 max-w-[400px]">
+                <FaAddressBook size={20} className="text-primary" /> Popoola
+                street, 7, Mayowa Close, Ago palace way, Lagos
+              </li>
+              <li className="flex  items-center gap-5 py-3 max-w-[400px]">
+                <Link
+                  className="hover:opacity-50 flex  items-center gap-5"
+                  href="https://twitter.com/OrangedropsNg"
+                >
+                  <FaTwitter className="text-primary" size={20} />{" "}
+                  @orangedropsng
+                </Link>
+              </li>
+              <li className="flex  items-center gap-5 py-3 max-w-[400px]">
+                <Link
+                  className="hover:opacity-50 flex  items-center gap-5"
+                  href="https://www.instagram.com/orangedropsng/?hl=en"
+                >
+                  <FaInstagram className="text-primary" size={20} />{" "}
+                  @orangedropsng
+                </Link>
+              </li>
+              <li className="flex  items-center gap-5 py-3 max-w-[400px]">
+                <Link
+                  className="hover:opacity-50 flex  items-center gap-5"
+                  href="https://www.linkedin.com/company/orange-drops-limited/"
+                >
+                  <FaLinkedin className="text-primary" size={20} />{" "}
+                  Orange-drops-limited
+                </Link>
               </li>
             </ul>
           </div>
