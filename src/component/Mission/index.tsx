@@ -21,7 +21,7 @@ function Mission() {
             data-aos="fade-left"
             className="relative rounded-xl"
             alt=""
-            src="/food-lab.jpg"
+            src="/wwd2.jpeg"
             width={500}
             height={500}
           />

@@ -41,7 +41,7 @@ const About = () => {
               data-aos="fade-up-right"
               className="rounded-xl translate-x-5 translate-y-5"
               alt="wwd2"
-              src="/wwd2.jpeg"
+              src="/food-lab.jpg"
               width={500}
               height={300}
             />
