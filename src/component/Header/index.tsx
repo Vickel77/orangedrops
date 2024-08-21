@@ -99,14 +99,14 @@ function Header() {
           />
         </div> */}
 
-        <div className=" relative before:content-[''] before:h-[400px] before:w-[400px]  before:transition-[2s]  before:absolute before:-top-5 before:-left-5 before:rounded-xl before:border-2 before:border-b-0 before:border-r-0 before:border-primary  after:content-[''] after:h-[400px] after:w-[400px] after:border-l-0 after:border-t-0 after:absolute after:-bottom-5 after:-right-5  after:rounded-xl after:border-2 after:border-secondary after:-z-10 after:transition-[1s]">
+        <div className=" relative">
           <Image
             data-aos="fade-up"
             className="drop-shadow-xl rounded-xl "
-            width={600}
+            width={700}
             height={200}
             alt=""
-            src="/wwd1.jpeg"
+            src="/header-banner.png"
           />
         </div>
       </div>
