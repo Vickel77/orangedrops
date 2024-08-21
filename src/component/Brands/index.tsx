@@ -50,11 +50,11 @@ const Brands = ({
               <div
                 data-aos="fade-right"
                 key={"product.id"}
-                className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden "
+                className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10  "
               >
                 <div className=" flex  justify-center items-center">
                   <Image
-                    src="/white-bread.png"
+                    src="/jitos-can.png"
                     alt={"white bread"}
                     width={300}
                     height={200}
@@ -62,7 +62,7 @@ const Brands = ({
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">White Bread</h3>
+                  <h3 className="text-xl font-semibold mb-2">Jitos</h3>
                   <p className="max-w-[200px] mb-4">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Placeat, quam!
@@ -72,19 +72,19 @@ const Brands = ({
               <div
                 key={"product.id"}
                 data-aos="fade-left"
-                className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden  "
+                className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10  "
               >
                 <div className=" flex justify-center items-center">
                   <Image
-                    src="/fruits-powder.png"
+                    src="/sitro.png"
                     alt={"fruits powder"}
                     width={300}
                     height={200}
                     className=" object-cover drop-shadow-xl"
                   />
                 </div>
-                <div className="p-6  justify-center">
-                  <h3 className="text-xl font-semibold mb-2">Fruits Powder</h3>
+                <div className="p-6 justify-center">
+                  <h3 className="text-xl font-semibold mb-2">Citro</h3>
                   <p className="max-w-[200px] mb-4">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Placeat, quam!
@@ -102,7 +102,7 @@ const Brands = ({
             key={"product.id"}
             className={`flex flex-wrap ${
               !onHomePage ? "mt-20" : "mb-20"
-            }   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0`}
+            }   min-w-[150px] bg-[#001200] text-white justify-center items-center  rounded-xl shadow-md overflow-hidden flex-shrink-0 `}
           >
             <div className="p-10  flex-1  justify-center">
               <h3 className="text-3xl font-semibold mb-2">
