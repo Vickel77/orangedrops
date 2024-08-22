@@ -13,8 +13,8 @@ import { FaPhoneFlip } from "react-icons/fa6";
 const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-16 before:fixed before:top-0 before:left-20 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:fixed after:bottom-0 after:right-20 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
-      <div className="max-w-[90%] md:max-w-[70%] bg-opacity-50 backdrop-blur-lg border-2 border-white mx-auto bg-white p-8 rounded-lg shadow mt-20">
-        <h2 className="text-5xl font-semibold text-gray-900 text-center mb-8">
+      <div className="max-w-[100%] md:max-w-[70%] bg-opacity-50 backdrop-blur-lg border-2 border-white mx-auto bg-white p-8 rounded-lg shadow mt-20">
+        <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 text-center mb-8">
           Contact Us
         </h2>
         <div className="flex flex-wrap gap-10 w-full justify-between ">
