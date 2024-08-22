@@ -3,10 +3,13 @@ import React from "react";
 
 function Mission() {
   return (
-    <section className="bg-secondary rounded-3xl mt-40  py-10 w-full border-2">
+    <section className="bg-secondary rounded-3xl mt-20  py-10 w-full border-2">
       <div className=" flex flex-wrap  w-full justify-center items-center">
         <div className="max-w-[100%] md:max-w-[50%] text-white text-center p-5 md:p-20">
-          <h2 data-aos="fade-in" className="text-4xl font-bold mb-5 ">
+          <h2
+            data-aos="fade-in"
+            className="text-2xl md:text-4xl font-bold mb-5 "
+          >
             Our Mission
           </h2>
           <p data-aos="fade-in" className="text-md md:text-xl">
@@ -29,7 +32,10 @@ function Mission() {
       </div>
       <div className=" flex flex-row-reverse flex-wrap  w-full justify-center items-center mt-14 md:mt-0">
         <div className="max-w-[100%] md:max-w-[50%] text-white text-center p-5 md:p-20">
-          <h2 data-aos="fade-in" className="text-4xl font-bold mb-5 ">
+          <h2
+            data-aos="fade-in"
+            className="text-2xl md:text-4xl font-bold mb-5 "
+          >
             Our Vision
           </h2>
           <p data-aos="fade-in" className="text-md md:text-xl">

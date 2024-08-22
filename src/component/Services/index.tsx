@@ -30,9 +30,9 @@ const products = [
 
 const Services = () => {
   return (
-    <section className="relative py-12 my-20 ">
+    <section className="relative py-0 my-20 ">
       <div className="sticky top-0 z-10 py-4">
-        <h2 className="text-4xl font-bold text-center opacity-50 mb-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-center opacity-50 mb-10">
           Interests
         </h2>
       </div>
