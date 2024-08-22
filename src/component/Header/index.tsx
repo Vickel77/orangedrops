@@ -34,10 +34,10 @@ function Header() {
   }, [mousePos]);
 
   return (
-    <header className="relative z-[-1] min-h-[90vh] flex flex-col place-items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-[''] text-center pt-40">
+    <header className="relative z-[-1]  flex flex-col place-items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-[''] text-center pt-40">
       {/* <div className="w-[300px] h-[300px] " /> */}
-      <div className=" w-[90%] md:w-[80%] mb-6 relative">
-        <h1 className="text-2xl md:text-5xl text-secondary font-bold mb-5 leading-[2rem] md:leading-[4rem]">
+      <div className=" w-[90%] md:w-[80%] relative">
+        <h1 className="text-3xl md:text-5xl text-secondary font-bold mb-5 leading-[2rem] md:leading-[4rem]">
           Pioneering food production and{" "}
           <span className={`relative `}>
             {" "}

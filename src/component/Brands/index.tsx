@@ -40,8 +40,12 @@ const Brands = ({
       <div className="">
         {!onHomePage && (
           <>
-            <div className="sticky top-0 z-10 py-4">
-              <h2 className="text-4xl font-bold text-center opacity-50 pb-10 ">
+            <div
+              className={`sticky  ${
+                hideBottomBanner ? "min-h-[40vh]" : ""
+              } flex justify-center items-center top-0 z-10 py-4`}
+            >
+              <h2 className="text-3xl md:text-5xl  font-bold text-center  pb-10 ">
                 Our Products
               </h2>
             </div>

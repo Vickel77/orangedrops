@@ -10,7 +10,9 @@ const About = () => {
     <div className="w-[100vw] overflow-hidden text-gray-800">
       <div className="container mx-auto px-5 py-16">
         <div className="max-w-[100vw] min-h-[50vh] relative flex justify-center items-center before:absolute before:top-0 before:left-0 before:h-[500px] before:w-[500px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:opacity-50 before:to-transparent before:blur-2xl  before:content-[''] after:absolute after:bottom-0 after:right-0 after:-z-20 after:h-[500px] after:opacity-50 after:blur-2xl after:w-[500px] after:translate-x-1/3 after:bg-gradient-radial after:from-primary  after:content-['']">
-          <h1 className="text-5xl font-semibold text-center mb-8">About Us</h1>
+          <h1 className="text-3xl md:text-5xl font-semibold text-center mb-8">
+            About Us
+          </h1>
           <div>
             <Image alt="" src="" />
           </div>
