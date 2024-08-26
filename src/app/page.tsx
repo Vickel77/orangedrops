@@ -28,7 +28,7 @@ export default function Home() {
         {/* <TrustedBrands /> */}
         <Mission />
         <Services />
-        <Brands />
+        <Brands onHomePage />
 
         {/* <Testimonial /> */}
       </section>

@@ -1,28 +1,40 @@
 import Image from "next/image";
 
-const brands = [
+const products = [
   {
     id: 1,
-    name: "Product 1",
+    name: "Jitos",
     price: "$49.99",
-    description: "This is a great product that you will love!",
-    imageSrc: "/img-slice-1.png",
+    description:
+      "Premium tomato paste, delivering rich, concentrated flavours and taste",
+    imageSrc: "/jitos-can.png",
     imageAlt: "Product 1",
   },
   {
     id: 2,
-    name: "Product 2",
+    name: "Sitro",
     price: "$59.99",
-    description: "This is another great product that you will love!",
-    imageSrc: "/img-b-bread.png",
+    description:
+      "Rich chocolate-malt beverage powder, versatile and enjoyable I'm various forms, offering a delightful and indulgent experience",
+    imageSrc: "/sitro.png",
     imageAlt: "Product 2",
   },
   {
     id: 3,
-    name: "Product 3",
+    name: "Cloves",
     price: "$69.99",
-    description: "This product is amazing and you should buy it!",
-    imageSrc: "/img-slice-3.png",
+    description:
+      "A premium bead loaf line, offering variety of high volume, quality loaves",
+    imageSrc: "/clove-1.png",
+    imageAlt: "Product 3",
+  },
+  {
+    id: 4,
+    name: "Toyin",
+    price: "$69.99",
+    description:
+      "Tomato cultivation program, including the a pilot  irrigated farm and multiple community engagement programs",
+    imageSrc: "/clove-1.png",
     imageAlt: "Product 3",
   },
   // Add more products as needed
@@ -42,7 +54,7 @@ const Brands = ({
           <>
             <div
               className={`sticky  ${
-                hideBottomBanner ? "min-h-[40vh]" : ""
+                hideBottomBanner ? "min-h-[30vh]" : ""
               } flex justify-center items-center top-0 z-10 py-4`}
             >
               <h2 className="text-3xl md:text-5xl  font-bold text-center  pb-10 ">
@@ -51,53 +63,31 @@ const Brands = ({
             </div>
 
             <div className="flex flex-wrap gap-10 justify-evenly relative">
-              <div
-                data-aos="fade-right"
-                key={"product.id"}
-                className="flex flex-wrap  min-w-[150px] max-w-full  bg-primary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10  "
-              >
-                <div className=" flex  justify-center items-center">
-                  <Image
-                    src="/jitos-can.png"
-                    alt={"white bread"}
-                    width={300}
-                    height={200}
-                    className=" object-cover drop-shadow-xl"
-                  />
+              {products.map((product, index) => (
+                <div
+                  data-aos="fade-right"
+                  key={"product.id"}
+                  className={`flex flex-wrap  min-w-[150px] max-w-full  ${
+                    index === 0 || index == 3 ? "bg-primary" : "bg-secondary"
+                  }  text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10`}
+                >
+                  <div className="flex justify-center items-center">
+                    <Image
+                      src={product?.imageSrc}
+                      alt={"white bread"}
+                      width={300}
+                      height={200}
+                      className=" object-cover drop-shadow-xl"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2">
+                      {product?.name}
+                    </h3>
+                    <p className="max-w-[200px] mb-4">{product?.description}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Jitos</h3>
-                  <p className="max-w-[200px] mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Placeat, quam!
-                  </p>
-                </div>
-              </div>
-              <div
-                key={"product.id"}
-                data-aos="fade-left"
-                className="flex  flex-wrap  min-w-[150px] max-w-full  bg-secondary text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10  "
-              >
-                <div className=" flex justify-center items-center">
-                  <Image
-                    src="/sitro.png"
-                    alt={"fruits powder"}
-                    width={300}
-                    height={200}
-                    className=" object-cover drop-shadow-xl"
-                  />
-                </div>
-                <div className="p-6 justify-center">
-                  <h3 className="text-xl font-semibold mb-2">Citro</h3>
-                  <p className="max-w-[200px] mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Placeat, quam!
-                  </p>
-                  {/* <button className="shadow-xl bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-primary-dark">
-                Order Now
-              </button> */}
-                </div>
-              </div>
+              ))}
             </div>
           </>
         )}
