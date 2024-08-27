@@ -2,6 +2,15 @@ import Image from "next/image";
 
 const products = [
   {
+    id: 3,
+    name: "Cloves",
+    price: "$69.99",
+    description:
+      "A premium bead loaf line, offering variety of high volume, quality loaves",
+    imageSrc: "/clove-1.png",
+    imageAlt: "Product 3",
+  },
+  {
     id: 1,
     name: "Jitos",
     price: "$49.99",
@@ -19,22 +28,14 @@ const products = [
     imageSrc: "/sitro.png",
     imageAlt: "Product 2",
   },
-  {
-    id: 3,
-    name: "Cloves",
-    price: "$69.99",
-    description:
-      "A premium bead loaf line, offering variety of high volume, quality loaves",
-    imageSrc: "/clove-1.png",
-    imageAlt: "Product 3",
-  },
+
   {
     id: 4,
     name: "Toyin",
     price: "$69.99",
     description:
       "Tomato cultivation program, including the a pilot  irrigated farm and multiple community engagement programs",
-    imageSrc: "/clove-1.png",
+    imageSrc: "/toyin.png",
     imageAlt: "Product 3",
   },
   // Add more products as needed
@@ -67,15 +68,15 @@ const Brands = ({
                 <div
                   data-aos="fade-right"
                   key={"product.id"}
-                  className={`flex flex-wrap  min-w-[150px] max-w-full  ${
+                  className={`flex flex-grow flex-shrink flex-wrap  min-w-[150px]  ${
                     index === 0 || index == 3 ? "bg-primary" : "bg-secondary"
                   }  text-white justify-center items-center  rounded-xl shadow-md overflow-hidden py-10`}
                 >
-                  <div className="flex justify-center items-center">
+                  <div className="flex justify-center items-center ">
                     <Image
                       src={product?.imageSrc}
                       alt={"white bread"}
-                      width={300}
+                      width={250}
                       height={200}
                       className=" object-cover drop-shadow-xl"
                     />
