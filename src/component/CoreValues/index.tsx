@@ -35,7 +35,7 @@ const values = [
 
 export default function CoreValues() {
   return (
-    <div className="container mx-auto  mt-20">
+    <div className="container mx-auto  mt-36">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-5 opacity-50">
         Our Core Values
       </h2>

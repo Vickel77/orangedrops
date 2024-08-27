@@ -5,7 +5,7 @@ import Socials from "../Socials";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-primary text-white px-20 pt-20 pb-10  text-lg">
+    <footer className="relative bg-secondary text-white px-20 pt-20 pb-10  text-lg">
       <Image
         width={300}
         height={300}

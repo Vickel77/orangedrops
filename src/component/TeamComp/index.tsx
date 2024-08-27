@@ -13,7 +13,7 @@ const products = [
     id: 2,
     name: "Khalifa",
     price: "$59.99",
-    description: "Chef",
+    description: "COO",
     imageSrc: "/team-2.png",
     imageAlt: "Product 2",
   },
