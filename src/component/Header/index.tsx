@@ -46,7 +46,7 @@ function Header() {
         />
       </div>
       <div className=" w-[90%] md:w-[80%] relative">
-        <h1 className="text-3xl md:text-5xl text-secondary font-bold mb-5 leading-[2rem] md:leading-[4rem]">
+        <h1 className="text-3xl md:text-5xl font-bold mb-5 mt-5 leading-[2rem] md:leading-[4rem]">
           Pioneering food production and{" "}
           <span className={`relative `}>
             {" "}
