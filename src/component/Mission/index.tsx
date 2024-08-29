@@ -30,7 +30,7 @@ function Mission() {
           />
         </div>
       </div>
-      <div className=" flex flex-row-reverse flex-wrap  w-full justify-center items-center mt-14 md:mt-0">
+      <div className=" flex flex-row-reverse flex-wrap  w-full justify-center items-center mt-20 ">
         <div className="max-w-[100%] md:max-w-[50%] text-white text-center p-5 md:p-20">
           <h2
             data-aos="fade-in"
@@ -49,7 +49,7 @@ function Mission() {
             data-aos="fade-right"
             className="relative rounded-xl"
             alt=""
-            src="/vision.jpg"
+            src="/vision.jpeg"
             width={500}
             height={500}
           />
