@@ -17,7 +17,7 @@ const config: Config = {
       colors: {
         default: "#444444",
         primary: "#ff7000",
-        secondary: "#187A01",
+        secondary: "#0c4200",
         danger: "#FF331F",
         muted: "#909090",
         disabled: "#C4C4C4",
