@@ -3,9 +3,11 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    name: "Azeez Ibnrahim",
+    name: "Azeez Ibrahim",
     price: "$49.99",
-    description: "CEO",
+    position: "CEO",
+    description:
+      "Traditionally trained as an IT professional with experience building large and high performing teams, a deep interest in large scale food production, it’s technologies and the economics behind and around it led to co-founding Orangedrops on whose board he currently serves as the Acting C.E.O",
     imageSrc: "/team-1.png",
     imageAlt: "Product 1",
   },
@@ -13,7 +15,9 @@ const products = [
     id: 2,
     name: "Khalifa",
     price: "$59.99",
-    description: "COO",
+    position: "COO",
+    description:
+      "Upon completion of extensive culinary training after graduate studies and having worked at multiple high volume fast paced food companies and restaurant, a deep understanding of food processing and food processing technologies raised a strong desire to build a global food production company.",
     imageSrc: "/team-2.png",
     imageAlt: "Product 2",
   },
@@ -31,20 +35,25 @@ const TeamComp = () => {
               data-aos={"fade-up"}
               data-aos-delay={(index + 1) * 100}
               key={product.id}
-              className="flex flex-col item-center flex-grow-[1] basis-[200px] max-w-[350px]  min-w-[200px] bg-white bg-opacity-60 backdrop-filter backdrop-blur-lg  rounded-xl shadow-md overflow-visible flex-shrink-0"
+              className="flex flex-col item-center flex-grow-[1] basis-[200px] max-w-[400px]  min-w-[200px] bg-white bg-opacity-60 backdrop-filter backdrop-blur-lg  rounded-xl shadow-md overflow-visible flex-shrink-0"
             >
-              <div className=" w-[100px] h-[100px] shadow-xl  translate-y-[-50%] overflow-hidden  self-center flex justify-center items-center rounded-full">
+              <div className="w-[100px] h-[100px] shadow-xl translate-y-[-50%] overflow-hidden  self-center flex justify-center items-center rounded-full">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   width={100}
                   height={100}
-                  className="rounded-full "
+                  className="rounded-full"
                 />
               </div>
               <div className="pb-10 text-center">
-                <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                <p className="text-gray-700 mb-4">{product.description}</p>
+                <h3 className="text-2xl text-secondary font-semibold ">
+                  {product.name}
+                </h3>
+                <p className="text-xl ">{product.position}</p>
+                <p className="text-gray-700 mb-4 p-5 px-10 opacity-75 ">
+                  {product.description}
+                </p>
                 {/* <div className="text-lg font-bold mb-4">{product.price}</div>
                 <button className="shadow-xl bg-primary text-white py-2 px-4 rounded-full hover:bg-primary-dark">
                   Buy Now
